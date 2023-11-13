@@ -1,0 +1,47 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(202, 220, 226, 1);
+    color: #fff;
+}
+
+.logo img {
+   
+    height: 24px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+
+/* Media query para el menú de hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .nav-items {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+
+/* Estilos para el menú desplegable */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    
+}
+
+.mobile-menu.show {
+    display: flex;
+}

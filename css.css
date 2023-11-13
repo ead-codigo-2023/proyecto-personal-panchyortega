@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* Estilos de texto */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25.73px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.25px;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+	margin-bottom: 8px; /* Establece 12px de margen en la parte inferior de los párrafos */
+}
+
+pv {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+	margin-bottom: 8px; /* Establece 12px de margen en la parte inferior de los párrafos */
+	color:rgba(90, 158, 13, 1)
+}
+
+li {
+
+	font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+	
+}
+
+/* Estilos de botones */
+.btn-green, .btn-blue {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-nav, .burger-menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+	}
+
+.btn-green {
+    background-color: green;
+    border-radius: 12px;
+    color: white;
+}
+
+.btn-blue {
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+}
+
+/* Establecer márgenes generales */
+
+body {
+	margin: 10px;
+	padding: 5px; 
+  }
+
+.container {
+    max-width: 1200px; /* Define el ancho máximo de tu contenido */
+    margin: 0 auto; /* Centra el contenido en el centro de la página */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+/* Aplica márgenes a elementos individuales si es necesario */
+
+h1, h2, h3, p {
+    margin-bottom: 18px; /* Margen inferior para títulos y párrafos */
+}
+
+.button-container {
+    margin-top: 20px; /* Margen superior para contenedor de botones */
+}
+
+/* Establecer márgenes para botones */
+
+.btn-green, .btn-blue {
+    margin-right: 24px; /* Espacio entre botones */
+}
+
+/* Definir colores */
+
+body {
+    background-color: rgba(238, 244, 246, 1); /* Fondo */
+    color: rgba(17, 23, 25, 1); /* Color del texto */
+}
+
+.secondary-color {
+    color: rgba(202, 220, 226, 1); /* Color secundario */
+}
+
+.accent-color {
+    color: rgba(90, 158, 13, 1); /* Color de acento */
+}
+
+/* Establecer colores de fondo para botones */
+
+.btn-nav {
+    margin-left: 32px;
+    text-decoration: none;
+    color: #111719;
+    background-color: rgba(202, 220, 226, 1); /* Color secundario */
+
+    transition: all 0.2s ease-in-out;
+}
+    
+	.btn-nav:hover {
+        color: rgba(90, 158, 13, 1);
+    }
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 32px;
+    text-decoration: none;
+    color: #111719;
+    background-color: rgba(202, 220, 226, 1); /* Color secundario */
+
+    transition: all 0.2s ease-in-out;
+}
+
+	.burger-menu:hover {
+		color: rgba(90, 158, 13, 1);
+	}
+
+.btn-green {
+    background-color: rgba(90, 158, 13, 1); /* Color de acento (verde) */
+    color: white; /* Texto en blanco para resaltar */
+    text-decoration: none;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-green:hover {
+	color: rgba(90, 158, 13, 1);
+	background-color: rgba(17, 23, 25, 1);
+}
+
+.btn-blue {
+    background-color: rgba(202, 220, 226, 1); /* Color secundario */
+    color: rgba(17, 23, 25, 1); /* Texto en blanco para resaltar */
+    text-decoration: none;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-blue:hover {
+	color: rgba(202, 220, 226, 1);
+	background-color: rgba(17, 23, 25, 1);
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+/*
+.navbar {
+    height: 72px;
+    background-color: rgba(202, 220, 226, 1); /* Color secundario 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+} 
+
+.navbar-logo img {
+    height: 24px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgba(17, 23, 25, 1); /* Color del texto 
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar-icons a {
+    text-decoration: none;
+    color: rgba(17, 23, 25, 1); /* Color del texto 
+} */
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #CADCE2;
+	z-index: 1000;
+}
+
+.logo img {
+   
+    height: 24px;
+	padding: 20px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+
+/* Media query para el menú de hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 670px) {
+    .nav-items {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+
+/* Estilos para el menú desplegable */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #CADCE2;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+
+
+/* SECCIONES GENERALES */
+
+.section {
+  
+	display: flex;
+    flex-direction: column; /* Cambiar a "row" en pantallas grandes */
+	flex-wrap:wrap;
+    gap: 32px; /* Espacio entre las dos columnas */
+    /* padding: 50px;  Añade espacio alrededor del contenido */
+	justify-content: center; /* Centra horizontalmente */
+	align-items: top; /* Centra verticalmente */
+	margin-left: 20px;
+	margin-right: 20px;
+	
+
+}
+
+.section + .section {
+    margin-top: 120px; /* Espacio de 120px entre las secciones */
+}
+
+
+/* Establece el ancho mínimo y máximo para las columnas */
+.contenido {
+    flex: 1; 
+    min-width: 350px; /* Ancho mínimo deseado */
+    max-width: 600px; /* Ancho máximo deseado */
+    margin-bottom: 0px; /* Espacio entre las columnas (vertical) */
+	
+	
+}
+
+.full-width {
+    flex: 1;
+    flex-basis: 100%; /* Ocupa todo el espacio horizontal */
+    max-width: 100%; /* Ancho máximo del 100% */
+    margin-bottom: 0; /* Sin espacio inferior */
+}
+
+
+/* Establece el ancho mínimo y máximo para las columnas */
+.contenido-img {
+	/*  flex: 1; */
+	/* width:max-content; */
+	/* max-width: 100%; */
+	/* width: min-content; */
+    height: auto;
+    vertical-align: top;
+	/* justify-content:left; */
+
+}
+
+/* Estilos para la responsividad */
+@media (min-width: 600px) {
+    .section {
+        flex-direction: row; /* Columnas una al lado de la otra en pantallas grandes (tamaño de tablet) */
+        gap: 32px; /* No hay espacio entre las columnas en pantallas grandes */
+    }
+}
+
+
+.btn-container {
+    display: flex;
+    
+}
+
+
+
+/* Estilos para las cards de testimonios */
+.testimonio-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+    box-sizing: border-box;
+	min-width: 250px; /* Ancho mínimo deseado */
+    max-width: 600px; /* Ancho máximo deseado */
+    margin-bottom: 0px; /* Espacio entre las columnas (vertical) */
+	max-width:max-content;
+	
+}
+
+.testimonio-fila-uno {
+    display: flex;
+	flex-direction: row; /* Cambiar a "row" en pantallas grandes */
+	flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding: 24px;
+
+}
+
+
+.avatar-columna img {
+    max-width: 100%;
+    height: auto;
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente */
+	
+}
+
+.info-columna {
+    flex: 2;
+    padding-left: 20px;
+	min-width: 164px;
+}
+
+.testimonio-fila-dos {
+    padding: 20px;
+}
+
+/* Estilos para la responsividad */
+@media (min-width: 600px) {
+    .testimonio-card {
+        flex-direction: row; /* Columnas una al lado de la otra en pantallas grandes (tamaño de tablet) */
+        gap: 32px; /* No hay espacio entre las columnas en pantallas grandes */
+    }
+}
